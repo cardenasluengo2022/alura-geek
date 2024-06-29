@@ -1,0 +1,194 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    width: 100;
+}
+
+body {
+    min-width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 24px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    background-image: url(images/matrix.jpg);
+    background-size: 350px;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: whitesmoke;
+    font-size: 2.5rem;
+}
+
+.supergrid {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 50vh;
+    gap: 2rem;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+.products h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.card {
+    background-image: url(images/fire.jpg);
+    background-size: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    flex: 200px;
+    height: auto;
+    border: 1px solid #000000;
+    border-radius: 2rem;
+    color: white;
+}
+
+.card_img {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.card-container-value {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    margin-top: .8rem;
+}
+
+.delete_img {
+    object-fit: cover;
+}
+
+/* FORMULARIO */
+
+.add {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-top: 4.5rem;
+}
+
+.add h1 {
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.formulario {
+    width: 80%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 300px;
+    gap: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+input {
+    width: 90%;
+    border-radius: 2rem;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 40%;
+    padding: 1rem;
+
+}
+
+/* FOOTER */
+footer {
+    background-image: url(images/matrix.jpg);
+    background-size: 350px;
+    color: whitesmoke;
+    margin-top: 100vh;
+}
+
+.minifooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+.footer_logo {
+    width: 3rem;
+    height: 3rem;
+}
+
+p {
+    text-align: center;
+    margin-top: 0;
+}
+
+/* MEDIA QUERIES*/
+
+@media (width <=768px) {
+
+    .header {
+        background-size: 250px;
+        font-size: 1.5rem;
+    }
+
+    .supergrid {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 50vh;
+    }
+
+    .products {
+        order: 1
+    }
+
+    .card {
+        min-width: 250px;
+    }
+}
